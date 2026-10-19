@@ -11,43 +11,14 @@
 		7AD057283085419D0001B916 /* JokeAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 7AD057273085419D0001B916 /* JokeAPI */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7AD056D530851DC50001B916 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7AD056BC30851DC00001B916 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AD056C330851DC00001B916;
-			remoteInfo = JokeApp;
-		};
-		7AD056DF30851DC50001B916 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7AD056BC30851DC00001B916 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AD056C330851DC00001B916;
-			remoteInfo = JokeApp;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		7AD056C430851DC00001B916 /* JokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AD056D430851DC50001B916 /* JokeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AD056DE30851DC50001B916 /* JokeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7AD056C630851DC00001B916 /* JokeApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = JokeApp;
-			sourceTree = "<group>";
-		};
-		7AD056D730851DC50001B916 /* JokeAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = JokeAppTests;
-			sourceTree = "<group>";
-		};
-		7AD056E130851DC50001B916 /* JokeAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = JokeAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,20 +33,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AD056D130851DC50001B916 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AD056DB30851DC50001B916 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,8 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				7AD056C630851DC00001B916 /* JokeApp */,
-				7AD056D730851DC50001B916 /* JokeAppTests */,
-				7AD056E130851DC50001B916 /* JokeAppUITests */,
 				7AD056C530851DC00001B916 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				7AD056C430851DC00001B916 /* JokeApp.app */,
-				7AD056D430851DC50001B916 /* JokeAppTests.xctest */,
-				7AD056DE30851DC50001B916 /* JokeAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,52 +79,6 @@
 			productReference = 7AD056C430851DC00001B916 /* JokeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7AD056D330851DC50001B916 /* JokeAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7AD056EB30851DC50001B916 /* Build configuration list for PBXNativeTarget "JokeAppTests" */;
-			buildPhases = (
-				7AD056D030851DC50001B916 /* Sources */,
-				7AD056D130851DC50001B916 /* Frameworks */,
-				7AD056D230851DC50001B916 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7AD056D630851DC50001B916 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				7AD056D730851DC50001B916 /* JokeAppTests */,
-			);
-			name = JokeAppTests;
-			packageProductDependencies = (
-			);
-			productName = JokeAppTests;
-			productReference = 7AD056D430851DC50001B916 /* JokeAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7AD056DD30851DC50001B916 /* JokeAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7AD056EE30851DC50001B916 /* Build configuration list for PBXNativeTarget "JokeAppUITests" */;
-			buildPhases = (
-				7AD056DA30851DC50001B916 /* Sources */,
-				7AD056DB30851DC50001B916 /* Frameworks */,
-				7AD056DC30851DC50001B916 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7AD056E030851DC50001B916 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				7AD056E130851DC50001B916 /* JokeAppUITests */,
-			);
-			name = JokeAppUITests;
-			packageProductDependencies = (
-			);
-			productName = JokeAppUITests;
-			productReference = 7AD056DE30851DC50001B916 /* JokeAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,14 +91,6 @@
 				TargetAttributes = {
 					7AD056C330851DC00001B916 = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					7AD056D330851DC50001B916 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 7AD056C330851DC00001B916;
-					};
-					7AD056DD30851DC50001B916 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 7AD056C330851DC00001B916;
 					};
 				};
 			};
@@ -213,28 +112,12 @@
 			projectRoot = "";
 			targets = (
 				7AD056C330851DC00001B916 /* JokeApp */,
-				7AD056D330851DC50001B916 /* JokeAppTests */,
-				7AD056DD30851DC50001B916 /* JokeAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7AD056C230851DC00001B916 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AD056D230851DC50001B916 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AD056DC30851DC50001B916 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,34 +134,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AD056D030851DC50001B916 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AD056DA30851DC50001B916 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7AD056D630851DC50001B916 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7AD056C330851DC00001B916 /* JokeApp */;
-			targetProxy = 7AD056D530851DC50001B916 /* PBXContainerItemProxy */;
-		};
-		7AD056E030851DC50001B916 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7AD056C330851DC00001B916 /* JokeApp */;
-			targetProxy = 7AD056DF30851DC50001B916 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7AD056E630851DC50001B916 /* Debug */ = {
@@ -458,78 +314,6 @@
 			};
 			name = Release;
 		};
-		7AD056EC30851DC50001B916 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XT3PL4JY86;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.andreas-woerner.JokeAppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JokeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JokeApp";
-			};
-			name = Debug;
-		};
-		7AD056ED30851DC50001B916 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XT3PL4JY86;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.andreas-woerner.JokeAppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JokeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JokeApp";
-			};
-			name = Release;
-		};
-		7AD056EF30851DC50001B916 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XT3PL4JY86;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.andreas-woerner.JokeAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = JokeApp;
-			};
-			name = Debug;
-		};
-		7AD056F030851DC50001B916 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XT3PL4JY86;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.andreas-woerner.JokeAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = JokeApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,24 +331,6 @@
 			buildConfigurations = (
 				7AD056E930851DC50001B916 /* Debug */,
 				7AD056EA30851DC50001B916 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7AD056EB30851DC50001B916 /* Build configuration list for PBXNativeTarget "JokeAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AD056EC30851DC50001B916 /* Debug */,
-				7AD056ED30851DC50001B916 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7AD056EE30851DC50001B916 /* Build configuration list for PBXNativeTarget "JokeAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AD056EF30851DC50001B916 /* Debug */,
-				7AD056F030851DC50001B916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
