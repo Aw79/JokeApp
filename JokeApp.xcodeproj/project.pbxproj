@@ -574,7 +574,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		7AD057263085419D0001B916 /* XCRemoteSwiftPackageReference "JokeAPI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:Aw79/JokeAPI.git";
+			repositoryURL = "https://github.com/Aw79/JokeAPI.git";
 			requirement = {
 				kind = revision;
 				revision = 15aabf82369c12f35e17427fd06f4012eaa65bbb;

@@ -1,10 +1,10 @@
 {
-  "originHash" : "7bce50903c5b652630cd7559748a3f0e0f41dae8c0ca11bc743033753ef70877",
+  "originHash" : "bc7953ac9741bba24941335a970da0c81dbb97c520f0dc6ba69e24827edfa2bd",
   "pins" : [
     {
       "identity" : "jokeapi",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:Aw79/JokeAPI.git",
+      "location" : "https://github.com/Aw79/JokeAPI.git",
       "state" : {
         "revision" : "15aabf82369c12f35e17427fd06f4012eaa65bbb"
       }
