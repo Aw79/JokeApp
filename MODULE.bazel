@@ -1,0 +1,20 @@
+module(
+    name = "joke-app",
+    version = "1.0.0",
+)
+
+bazel_dep(name = "apple_support", version = "2.10.1")
+bazel_dep(name = "rules_apple", version = "5.3.1")
+bazel_dep(name = "rules_swift", version = "4.2.1")
+bazel_dep(name = "rules_xcodeproj", version = "4.1.0")
+bazel_dep(name = "rules_swift_package_manager", version = "1.25.0")
+
+swift_deps = use_extension(
+    "@rules_swift_package_manager//:extensions.bzl",
+    "swift_deps",
+)
+swift_deps.from_package(
+    resolved = "//:Package.resolved",
+    swift = "//:Package.swift",
+)
+use_repo(swift_deps, "swift_package", "swiftpkg_jokeapi")

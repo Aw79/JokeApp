@@ -1,31 +1,30 @@
-name: iOS starter workflow
+name: Build JokeApp
 
 on:
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+  workflow_dispatch:
 
 jobs:
   build:
-    name: Build and test JokeApp
+    name: Build JokeApp
     runs-on: macos-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Build
-        run: |
-          xcodebuild build-for-testing \
-            -scheme "JokeApp" \
-            -project "JokeApp.xcodeproj" \
-            -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest'
+      - name: Setup Bazel and cache
+        uses: bazel-contrib/setup-bazel@0.19.1
+        with:
+          bazelisk-cache: true
+          disk-cache: ${{ github.workflow }}
+          repository-cache: true
+          external-cache: true
+          cache-save: ${{ github.event_name != 'pull_request' }}
 
-      - name: Test
-        if: false
-        run: |
-          xcodebuild test-without-building \
-            -scheme "JokeApp" \
-            -project "JokeApp.xcodeproj" \
-            -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest'
+      - name: Build for iOS Simulator
+        run: bazel build //:JokeApp
+      
